@@ -27,7 +27,7 @@
      }
      .container{
          width: 100%;
-         max-width: 1200px ;
+         width: 1200px ;
          margin: 0 auto;
          padding-left: 15px;
          padding-right: 15px;
@@ -36,12 +36,14 @@
      .section{
         padding-bottom: 94px;
         padding-top: 94px;
-
      }
     body {
         font-family: Roboto, sans-serif ;
         background-color: var(--main-background-color);
         color: var(--text-color) ;
+    }
+    header{
+        border-bottom: 1px solid var(--border-color);
     }
     .logo{
         color: var(--accent-color);
@@ -51,6 +53,7 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
         text-decoration: none;
+        margin-right: 93px;
     }
     .logo-black {
         color: var(--text-color);
@@ -70,7 +73,7 @@
     .main-nav{
         display: flex;
         align-items: center;
-        border-bottom: 1px solid var(--border-color);
+    
     }
     .navigation {
         display: block;
@@ -95,7 +98,7 @@
     }
     .site-nav{
         display: flex;
-        margin-left: 93px;
+   
     }
     .site-nav .navigation-list:not(:last-child){
         margin-right: 50px;
@@ -126,7 +129,7 @@
         border-radius: 4px;
     }
     .work-list .work-list-description:not(:last-child){
-        margin-right: 30px;
+        margin-right: 8px;
     }
     .list:hover, 
     .list:focus {
@@ -173,10 +176,11 @@
     .main-section{
         background-color: var(--footer-background-color);
         text-align: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
     .main-text {
         margin-bottom:30px;
-        margin-top: 200px;
     
         font-weight: 900;
         font-size: 44px;
@@ -193,7 +197,6 @@
         display: inline-block;
         padding:10px 32px ;
         min-width: 200px;
-        margin-bottom: 210px;
        
         font-family: inherit;
         background-color: var(--accent-color);
@@ -213,6 +216,22 @@
     .description-list .description-list-skills:not(:last-child){
         margin-right: 30px;
         }
+    .visualy-hidden{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+    .team-position{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .description {
         margin-bottom: 10px;
 
@@ -220,19 +239,31 @@
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
+        text-transform: uppercase;
         color: var(--text-color);
     }
     .skill-text {
         font-size: 14px;
-        line-height: 1.7;
+        line-height: 1.16;
         letter-spacing: 0.03em; 
         color: var(--text-contacts-color);
     }
     .description-job-photo{
         display: flex;
     }
+    .works-list{
+        padding-top: 0;
+    }
     .description-job-photo .list-job-photo:not(:last-child){
         margin-right: 30px;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .our-team{
+        background-color: var(--frame-background-color);
     }
     .description-job{
         margin-bottom: 50px;
@@ -245,7 +276,6 @@
         color:var(--text-color); 
     }
     .description-name{
-        margin-top: 30px;
         margin-bottom: 10px;
     }
     .team{
@@ -255,8 +285,6 @@
         margin-right: 30px;
     }
     .position {
-        margin-bottom: 30px;
-
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -267,10 +295,7 @@
         flex-wrap: wrap;
         }
     .projects {
-         margin-top: 20px;
         margin-bottom: 4px;
-        padding-left: 24px;
-        padding-right: 24px;
 
         font-weight: 700;
         font-size: 18px;
@@ -279,18 +304,19 @@
         color: var(--text-color);
         }
     .projects-text {
-        margin-bottom: 20px;
-        padding-left: 24px;
-        padding-right: 24px;
-
         font-size: 16px;
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: var(--text-contacts-color);
         }
+    .project-exampl{
+        padding: 20px 24px;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+    }
     .list-prodjects{ 
         width: 370px;
-        border: 1px solid #EEEEEE;
         margin-right: 30px;
         margin-bottom: 30px;
         }
@@ -300,12 +326,14 @@
     .list-prodjects:nth-last-child(-n+3){
         margin-bottom: 0;
     }
-        .footer {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
         background-color: var(--footer-background-color);
         }
     .logo-footer{
         display: inline-block;
-        margin-top: 60px;
         margin-bottom: 20px;
         }
     .address-list{
@@ -317,6 +345,4 @@
     .email{
         margin-bottom: 9px;
     }
-    .telephon{
-        margin-bottom: 60px;
-    }
+    
